@@ -2,11 +2,34 @@
 
 Text-to-SQL with ~91% fewer schema tokens. schemagate is a local, read-only
 MCP server that hands the model only the tables a question needs, and only
-the ones the caller may read. It scores 74.34 EX on BIRD's hidden test set
-and is #1 on UniQL's Oracle board. Works on PostgreSQL, MySQL, SQLite,
+the ones the caller may read. Works on PostgreSQL, MySQL, SQLite,
 SQL Server, Oracle, Snowflake, BigQuery and DuckDB.
 
-Source and benchmarks: [ashishsinha1602/schemagate](https://github.com/ashishsinha1602/schemagate).
+## Benchmarks
+
+| Benchmark | Result |
+|---|---|
+| BIRD, hidden test set | 74.34 EX |
+| BIRD Mini-Dev | #1 in SQLite, PostgreSQL and MySQL |
+| UniQL, Oracle | #1 (64.93) |
+| LiveSQLBench-Large | listed, 34.58% |
+| Spider-ACL (access control) | 0.984 F1 |
+| Prompt tokens, 50+ table warehouses | 91% fewer than the full schema |
+
+Every number, with the scripts that produce it, is in
+[BENCHMARKS.md](https://github.com/ashishsinha1602/schemagate/blob/main/BENCHMARKS.md).
+
+## Where else it is listed
+
+LangChain and LangGraph ([langchain-schemagate](https://pypi.org/project/langchain-schemagate/),
+in the LangChain retrievers table), LlamaIndex
+([llama-index-retrievers-schemagate](https://pypi.org/project/llama-index-retrievers-schemagate/)),
+Pydantic AI (`schemagate[pydantic-ai]`), a Claude Code plugin and a GitHub
+Copilot plugin in the main repo, the official MCP registry, Glama and the
+awesome-mcp-servers lists. 44k PyPI downloads since the first release in
+September 2026.
+
+Source: [ashishsinha1602/schemagate](https://github.com/ashishsinha1602/schemagate).
 
 ## Install
 

@@ -2,7 +2,7 @@
   "name": "schemagate",
   "displayName": "schemagate",
   "version": "1.19.2",
-  "description": "Text-to-SQL with ~91% fewer schema tokens: a local, read-only MCP server that hands the model only the tables a question needs, and only the ones the caller may read. 74.34 EX on BIRD's hidden test set, #1 on UniQL's Oracle board. PostgreSQL, MySQL, SQLite, SQL Server, Oracle, Snowflake, BigQuery, DuckDB.",
+  "description": "Text-to-SQL with ~91% fewer schema tokens: a local, read-only MCP server that hands the model only the tables a question needs, and only the ones the caller may read. Benchmarks: 74.34 EX on BIRD's hidden test set, #1 on BIRD Mini-Dev in SQLite, PostgreSQL and MySQL, #1 on UniQL's Oracle board, listed on LiveSQLBench-Large, 0.984 F1 on Spider-ACL. Integrations: LangChain and LangGraph (langchain-schemagate), LlamaIndex, Pydantic AI, Claude Code and GitHub Copilot plugins, the official MCP registry and Glama. 44k PyPI downloads since September 2026. PostgreSQL, MySQL, SQLite, SQL Server, Oracle, Snowflake, BigQuery, DuckDB.",
   "author": {
     "name": "Ashish Sinha",
     "url": "https://github.com/ashishsinha1602"
