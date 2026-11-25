@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "schemagate": {
+      "command": "uvx",
+      "args": ["--python", "3.12", "--from", "schemagate[mcp,databases]==1.19.2", "schemagate-mcp"],
+      "env": {
+        "SCHEMAGATE_DATABASE_URL": "${SCHEMAGATE_DATABASE_URL}",
+        "SCHEMAGATE_MCP_TRANSPORT": "stdio"
+      }
+    }
+  }
+}
